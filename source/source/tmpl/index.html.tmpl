@@ -1,0 +1,42 @@
+<%= include('includes/top.tmpl') %>
+
+    <div class="main">
+
+		<ul>
+			<%
+
+				for (var i=1;i<13; i++) {
+					li(i);
+				}
+
+				function li(number) { %>
+
+					<li>
+						<a href="<%= obj['location' + number + '_article_url'] %>" target="_top">
+							<img src="<%= obj['pathStatic'] %>/<%= obj['vocab_dir'] %>/img/<%= obj['location' + number + '_image_name'] %>.jpg" />
+							<span><%= obj['location' + number + '_name'] %></span>
+						</a>
+					</li>
+
+			<% }; %>
+		</ul>
+
+		<select>
+			<%
+				for (var i=1;i<13; i++) {
+					option(i);
+				}
+
+				function option(number) { %>
+
+					<option value="<%= obj['location' + number + '_article_url'] %>">
+						<%= obj['location' + number + '_name'] %>
+					</option>
+
+			<% }; %>
+		</select>
+
+    </div>
+
+<%= include('includes/bottom.tmpl') %>
+

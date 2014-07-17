@@ -1,0 +1,16 @@
+{
+  "debug":          "false",
+  "whichEnv":       "local",
+  "project_number": "7166",
+  "cpsId":          "--REPLACEME--",
+  "year":           "2014",
+  "imageWidths":    ["320", "640", "1024"],
+  "vocabs": {
+    "googleSpreadsheetId": "",
+    "worksheet":           ""
+  },
+  "services": {
+    "default": "english",
+    "others": ["afrique", "arabic", "azeri", "bengali", "burmese", "chinese_simp", "chinese_simp_uk", "chinese_trad", "chinese_trad_uk", "gahuza", "hausa", "hindi", "indonesian", "kyrgyz", "mundo", "nepali", "pashto", "persian", "portuguese", "russian", "sinhala", "somali", "swahili", "tajik", "tamil", "turkish", "ukrainian", "urdu", "uzbek", "vietnamese"]
+  }
+}
